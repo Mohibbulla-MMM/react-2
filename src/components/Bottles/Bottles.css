@@ -1,0 +1,71 @@
+.bottles-card {
+    border: 2px solid tomato;
+    padding: 15px;
+    border-radius: 15px;
+
+}
+
+.bottle-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.bottle-img {
+    display: block;
+    width: 100%;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-black {
+    color: #000;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+button {
+    outline: 0;
+    border: 0;
+    background: green;
+    color: #fff;
+    border-radius: 15px;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.text-elips {
+    width: 200px;
+    /* white-space: nowrap; */
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+
+@media only screen and (max-width: 400px) {
+    .bottle-box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .bottle-box {
+        grid-template-columns: repeat(2, 1fr);
+        /* display: none; */
+    }
+
+}
+
+/* 
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+} */
